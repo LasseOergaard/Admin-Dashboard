@@ -1,40 +1,17 @@
-body, html{
-  margin: 0;
-  height: 100%;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: clamp(200px,20%,210px) 4fr;
-  grid-template-rows: 1fr 4fr;
-  grid-template-areas:
-  "sidebar header"
-  "sidebar article"
-  ;
-  height: 100%;
-}
-
-.header {
-  grid-area: header;
-  background-color: #f8fafc;
-}
-
 .sidebar {
+  color:line-gradient();
   padding-top: 32px;
   grid-area: sidebar;
-  background-color: #334155;
+  background: linear-gradient(90deg,#334155 80%,#243245 100%);
   display: grid;
-  grid-template-rows: 45px repeat(5, 1fr);
+  grid-template-rows: 45px 200px 0.5fr 100px 2fr;
   grid-template-areas: 
   "logo"
-  "one"
   "one"
   "..."
   "two"
   "...";
-
 }
-
 
 .sidebar-logo {
   display: flex;
@@ -90,22 +67,5 @@ body, html{
 
 .sidebar i {
   width: 16px;
-}
-.article {
-  grid-area: article;
-  background-color: #e2e8f0;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding:16px;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-}
-
-.project {
-  background-color: white;
 }
 

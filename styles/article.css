@@ -1,0 +1,17 @@
+.article {
+  grid-area: article;
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding:16px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.project {
+  background-color: white;
+}

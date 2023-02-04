@@ -1,0 +1,15 @@
+body, html{
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: clamp(200px,20%,210px) 4fr;
+  grid-template-rows: 130px 4fr;
+  grid-template-areas:
+  "sidebar header"
+  "sidebar article"
+  ;
+  height: 100%;
+}
