@@ -5,7 +5,7 @@ body, html{
 
 .container {
   display: grid;
-  grid-template-columns: clamp(200px,20%,210px) 4fr;
+  grid-template-columns: 200px 4fr;
   grid-template-rows: 130px 4fr;
   grid-template-areas:
   "sidebar header"

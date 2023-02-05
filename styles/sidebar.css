@@ -1,10 +1,10 @@
 .sidebar {
-  color:line-gradient();
+  z-index: 10;
   padding-top: 32px;
   grid-area: sidebar;
   background: linear-gradient(90deg,#334155 80%,#243245 100%);
   display: grid;
-  grid-template-rows: 45px 200px 0.5fr 100px 2fr;
+  grid-template-rows: 45px 200px 100px 100px 1fr;
   grid-template-areas: 
   "logo"
   "one"
@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 64px; 
+  cursor: pointer;
 }
 
 .sidebar-title {
